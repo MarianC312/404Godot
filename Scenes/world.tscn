@@ -1,0 +1,314 @@
+[gd_scene load_steps=8 format=3 uid="uid://c535do2e3f2qd"]
+
+[ext_resource type="PackedScene" uid="uid://dsjpakuvuf5o3" path="res://Scenes/Character.tscn" id="1_xeu5l"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sgyo8"]
+albedo_color = Color(0.889159, 0.000170575, 0.75647, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_baoo7"]
+material = SubResource("StandardMaterial3D_sgyo8")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ndtk2"]
+albedo_color = Color(0.868317, 0.535431, 0.423345, 1)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_eods5"]
+
+[sub_resource type="Sky" id="Sky_pb884"]
+sky_material = SubResource("ProceduralSkyMaterial_eods5")
+
+[sub_resource type="Environment" id="Environment_i1r7f"]
+background_mode = 2
+sky = SubResource("Sky_pb884")
+ambient_light_source = 3
+ambient_light_color = Color(0.80057, 0.621181, 0.545011, 1)
+reflected_light_source = 2
+
+[node name="World" type="Node3D"]
+
+[node name="TestRoom" type="Node3D" parent="."]
+
+[node name="FloorColoredTiles" type="Node3D" parent="TestRoom"]
+
+[node name="Tile01" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, -4.0415, 0.17, 4.06346)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile02" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, -2.53824, 0.17, 4.04631)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile03" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, -1.03824, 0.17, 4.04631)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile04" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 0.461759, 0.17, 4.04631)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile05" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 1.96176, 0.17, 4.04631)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile06" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 3.46176, 0.17, 4.04631)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile07" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 4.96176, 0.17, 4.04631)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile08" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, -4.0415, 0.17, 2.56346)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile09" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, -2.53824, 0.17, 2.54631)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile10" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, -1.03824, 0.17, 2.54631)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile11" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 0.461759, 0.17, 2.54631)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile12" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 1.96176, 0.17, 2.54631)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile13" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 3.46176, 0.17, 2.54631)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile14" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 4.96176, 0.17, 2.54631)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile15" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, -4.0415, 0.17, 1.06346)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile16" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, -2.53824, 0.17, 1.04631)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile17" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, -1.03824, 0.17, 1.04631)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile18" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 0.461759, 0.17, 1.04631)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile19" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 1.96176, 0.17, 1.04631)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile20" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 3.46176, 0.17, 1.04631)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile21" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 4.96176, 0.17, 1.04631)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile22" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, -4.0415, 0.17, -0.436544)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile23" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, -2.53824, 0.17, -0.453694)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile24" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, -1.03824, 0.17, -0.453694)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile25" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 0.461759, 0.17, -0.453694)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile26" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 1.96176, 0.17, -0.453694)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile27" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 3.46176, 0.17, -0.453694)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile28" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 4.96176, 0.17, -0.453694)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile29" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, -4.0415, 0.17, -1.93654)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile30" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, -2.53824, 0.17, -1.95369)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile31" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, -1.03824, 0.17, -1.95369)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile32" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 0.461759, 0.17, -1.95369)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile33" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 1.96176, 0.17, -1.95369)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile34" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 3.46176, 0.17, -1.95369)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile35" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 4.96176, 0.17, -1.95369)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile36" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, -4.0415, 0.17, -3.43654)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile37" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, -2.53824, 0.17, -3.45369)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile38" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, -1.03824, 0.17, -3.45369)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile39" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 0.461759, 0.17, -3.45369)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile40" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 1.96176, 0.17, -3.45369)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile41" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 3.46176, 0.17, -3.45369)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile42" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 4.96176, 0.17, -3.45369)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile43" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, -4.0415, 0.17, -4.93654)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile44" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, -2.53824, 0.17, -4.95369)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile45" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, -1.03824, 0.17, -4.95369)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile46" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 0.461759, 0.17, -4.95369)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile47" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 1.96176, 0.17, -4.95369)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile48" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 3.46176, 0.17, -4.95369)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Tile49" type="CSGMesh3D" parent="TestRoom/FloorColoredTiles" groups=["ColoredTiles"]]
+transform = Transform3D(1.5, 0, -1.31134e-07, 0, -0.09, 0, 1.31134e-07, 0, 1.5, 4.96176, 0.17, -4.95369)
+use_collision = true
+mesh = SubResource("BoxMesh_baoo7")
+
+[node name="Floor" type="CSGBox3D" parent="TestRoom"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45, 0.1, -0.45)
+use_collision = true
+size = Vector3(10.912, 0.2, 10.9177)
+material = SubResource("StandardMaterial3D_ndtk2")
+
+[node name="Wall1" type="CSGBox3D" parent="TestRoom"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45, 1.714, 4.894)
+use_collision = true
+size = Vector3(10.5024, 3.036, 0.2)
+material = SubResource("StandardMaterial3D_ndtk2")
+
+[node name="Wall2" type="CSGBox3D" parent="TestRoom"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45, 1.714, -5.80366)
+use_collision = true
+size = Vector3(10.5024, 3.036, 0.2)
+material = SubResource("StandardMaterial3D_ndtk2")
+
+[node name="Wall3" type="CSGBox3D" parent="TestRoom"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.9, 1.718, -0.451721)
+use_collision = true
+size = Vector3(10.9034, 3.036, 0.2)
+material = SubResource("StandardMaterial3D_ndtk2")
+
+[node name="Wall4" type="CSGBox3D" parent="TestRoom"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.79722, 1.718, -0.451721)
+use_collision = true
+size = Vector3(10.9034, 3.036, 0.2)
+material = SubResource("StandardMaterial3D_ndtk2")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_i1r7f")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 6, 0)
+
+[node name="Character" parent="." instance=ExtResource("1_xeu5l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3, 0)
