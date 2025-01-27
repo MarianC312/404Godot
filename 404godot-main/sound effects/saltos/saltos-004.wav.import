@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://5v4t281p26kc"
+path="res://.godot/imported/saltos-004.wav-f40e4f1acac0aab736755fc60a7f13f3.sample"
+
+[deps]
+
+source_file="res://sound effects/saltos/saltos-004.wav"
+dest_files=["res://.godot/imported/saltos-004.wav-f40e4f1acac0aab736755fc60a7f13f3.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

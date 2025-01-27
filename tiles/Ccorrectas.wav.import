@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bq5qhr4x2ebs3"
+path="res://.godot/imported/Ccorrectas.wav-15aae7ea5aa5fc40b25f9c27db218ecf.sample"
+
+[deps]
+
+source_file="res://sound effects/tiles/Ccorrectas.wav"
+dest_files=["res://.godot/imported/Ccorrectas.wav-15aae7ea5aa5fc40b25f9c27db218ecf.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
